@@ -20,6 +20,7 @@ FIND_LIBRARY(ITPP_LIBRARY_NORMAL
   NAMES itpp
   PATHS ${ITPP_DIR}/libs
   "${ITPP_DIR}\\win32\\lib"
+  /usr/lib/x86_64-linux-gnu/
   /usr/pkgs64/lib
   /usr/lib64
   /usr/lib
