@@ -124,9 +124,9 @@ void producer_thread(
           n_samples=t;
           break;
         }
-        sample_temp.real()=(sampbuf_sync.fifo.front()-127.0)/128.0;
+        sample_temp.real((sampbuf_sync.fifo.front()-127.0)/128.0);
         sampbuf_sync.fifo.pop_front();
-        sample_temp.imag()=(sampbuf_sync.fifo.front()-127.0)/128.0;
+        sample_temp.imag((sampbuf_sync.fifo.front()-127.0)/128.0);
         sampbuf_sync.fifo.pop_front();
         samples(t)=sample_temp;
         sample_time+=(FS_LTE/16)/(fs_programmed*k_factor);
